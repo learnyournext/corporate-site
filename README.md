@@ -3,7 +3,8 @@
 Learn Your Next 合同会社 のコーポレートサイト。
 
 ## 公開URL
-https://learnyournext.github.io/corporate-site/ （GitHub Pages）
+- https://corp.learnyournext.com/ （独自ドメイン。SquarespaceのDNSに `CNAME corp → learnyournext.github.io` を追加後に有効化）
+- https://learnyournext.github.io/corporate-site/ （GitHub Pagesの既定URL）
 
 ## 構成
 - `index.html` — 1ページ構成（Hero / できること / 私たちについて / 会社概要 / お問い合わせ / フッター）
@@ -20,5 +21,5 @@ https://learnyournext.github.io/corporate-site/ （GitHub Pages）
 CloudFrontから配信する。
 
 ## 未確定
-- 独自ドメイン（learnyournext.com）の割り当ては未対応。決まり次第DNS設定と `index.html` のJSON-LDへの `url` 追加が必要。
+- `corp.learnyournext.com` のDNS（SquarespaceのCNAME追加）は要対応。追加済みならGitHub Pages側でEnforce HTTPSを有効化する。
 - 「できること」3項目の文言は仮コピー。実際のサービス内容（会社概要の事業内容を参照）に合わせて要調整。

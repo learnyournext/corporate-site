@@ -28,7 +28,6 @@ a {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 24px 32px;
   border-bottom: 1px solid var(--color-border);
 }
@@ -37,22 +36,16 @@ a {
   display: block;
 }
 
-.nav-cta,
-.cta-link,
-.card-link {
-  text-decoration: none;
-  font-weight: 600;
-  background: var(--gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 .hero {
   max-width: 720px;
   margin: 0 auto;
   padding: 120px 32px 96px;
   text-align: center;
+}
+
+.eyebrow-logo {
+  display: block;
+  margin: 0 auto 24px;
 }
 
 .eyebrow {
@@ -111,6 +104,44 @@ a {
   max-width: 640px;
 }
 
+.company-table {
+  margin: 0;
+}
+
+.company-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.company-row:first-child {
+  border-top: none;
+}
+
+.company-row dt {
+  font-weight: 600;
+}
+
+.company-row dd {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.company-row ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.company-row li {
+  margin-bottom: 6px;
+}
+
+.company-row li:last-child {
+  margin-bottom: 0;
+}
+
 .contact-email {
   font-size: 18px;
 }
@@ -122,13 +153,6 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-
-.placeholder-note {
-  display: block;
-  font-size: 13px;
-  color: var(--color-muted);
-  margin-top: 8px;
 }
 
 .site-footer {
@@ -158,5 +182,9 @@ a {
   .section {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .company-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
